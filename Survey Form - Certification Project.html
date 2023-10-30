@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="styles.css"> 
+<html lang="en">
+  <div class="container">
+  <header class="header">
+    <h1 class="text-center" id="title" >Survey Form - CV</h1>
+    <p class="text-center" id="description" >
+      I appreciate you dedicating your time to assist me in enhancing my CV.
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label for="name" id="name-label">Name</label>
+      <input
+        class="form-control"
+        id="name"
+        name="name"
+        type="text"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="email" id="email-label">Email</label>
+      <input
+        class="form-control"
+        id="email"
+        name="email"
+        type="email"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="number" id="number-label" 
+      >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        class="form-control"
+        id="number"
+        type="number"
+        name="age"
+        min="13"
+        max="120"
+        placeholder="Age"
+      />
+    </div>
+    <div class="form-group">
+      <p>Which choice most accurately represents your present position?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select current role</option>
+        <option value="CEO">CEO</option>
+        <option value="Manager">Manager</option>
+        <option value="Engineer">Engineer</option>
+        <option value="Employee">Employee</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Do you believe I would be a valuable addition to your workplace?</p>
+      <label>
+        <input
+          class="input-radio"
+          type="radio"
+          name="user-recommend"
+          value="Yes"
+          checked
+        />Yes</label
+      >
+      <label>
+        <input
+          class="input-radio"
+          type="radio"
+          name="user-recommend"
+          value="No"
+        />No</label
+      >
+
+      <label
+        ><input
+          class="input-radio"
+          type="radio"
+          name="user-recommend"
+          value="Unsure"
+        />Unsure</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+        What is your favorite part on my CV?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="Work Experience">Work Experience</option>
+        <option value="Education">Education</option>
+        <option value="Certifications">Certifications</option>
+        <option value="Language">Language Skills</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        What areas do you think need enhancement?
+        <span class="clue">(Select all that are relevant)</span>
+      </p>
+
+      <label
+        ><input
+          class="input-checkbox"
+          type="checkbox"
+          name="prefer"
+          value="Front-end"
+        />Front-end</label
+      >
+      <label>
+        <input
+          class="input-checkbox"
+          type="checkbox"
+          name="prefer"
+          value="Back-end"
+        />Back-end</label
+      >
+      <label
+        ><input
+          class="input-checkbox"
+          type="checkbox"
+          name="prefer"
+          value="Database"
+        />Database</label
+      >
+      <label
+        ><input
+          class="input-checkbox"
+          type="checkbox"
+          name="prefer"
+          value="Work Experience"
+        />Work Experience</label
+      >
+      <label
+        ><input
+          class="input-checkbox"
+          type="checkbox"
+          name="prefer"
+          value="Education"
+        />Education</label
+      >
+      <label
+        ><input
+          class="input-checkbox"
+          type="checkbox"
+          name="prefer"
+          value="Certifications"
+        />Certifications</label
+      >
+      <label
+        ><input
+          class="input-checkbox"
+          type="checkbox"
+          name="prefer"
+          value="Language Skills"
+        />Language Skills</label
+      >
+      <label
+        ><input
+          class="input-checkbox"
+          name="prefer"
+          type="checkbox"
+          value="Programming Languages"
+        />Programming Languages</label
+      >
+      <label
+        ><input
+          class="input-checkbox"
+          type="checkbox"
+          name="prefer"
+          value="Github Repository"
+        />Github Repository</label
+      >
+      <label
+        ><input
+          class="input-checkbox"
+          type="checkbox"
+          name="prefer"
+          value="References"
+        />References</label
+      >
+      <label
+        ><input
+          class="input-checkbox"
+          name="prefer"
+          type="checkbox"
+          value="Nothing"
+        />Nothing</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>Do you have any feedback or recommendations?</p>
+      <textarea
+        class="input-textarea"
+        id="comments"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button class="submit-button" id="submit" type="submit">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+</html>
